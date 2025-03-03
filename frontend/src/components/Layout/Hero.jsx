@@ -12,8 +12,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-opacity-5 flex items-center justify-center">
         <div className="text-center text-white p-6">
           <h1 className="text-4xl md:text-9xl font-bold tracking-tighter uppercase mb-4">
-            Street <br /> Wear
-            <span className="text-2xl md:text-3xl">&reg;</span>
+            Home
+            <span className="text-2xl md:text-3xl mx-1">&reg;</span>
           </h1>
           <p className="text-sm tracking-tighter md:text-lg mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

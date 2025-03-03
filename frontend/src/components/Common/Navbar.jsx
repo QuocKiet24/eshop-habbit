@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* left - logo */}
         <div className="">
           <Link to="/" className="text-3xl font-bold">
-            Habbit
+            E-Shop
           </Link>
         </div>
         {/* center - navigation link */}
