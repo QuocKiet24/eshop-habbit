@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { FaTruckMoving } from "react-icons/fa";
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -159,7 +160,10 @@ const NewArrivals = () => {
   return (
     <section className="py-16 px-4 lg:px-0">
       <div className="container mx-auto text-center mb-10 relative">
-        <h2 className="text-3xl font-bold mb-4">Hàng mới về</h2>
+        <h2 className="text-3xl font-bold mb-4 uppercase">Hàng mới về</h2>
+        <div className="text-5xl text-primary flex justify-center">
+          <FaTruckMoving />
+        </div>
         <p className="text-lg text-gray-600 mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis
           hic distinctio sapiente?
