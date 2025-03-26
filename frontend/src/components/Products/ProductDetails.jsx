@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import ProductGrid from "./ProductGrid";
 
 const selectedProduct = {
   name: "Stylish Jacket",
@@ -250,6 +251,7 @@ const ProductDetails = () => {
           <h2 className="text-2xl text-center font-medium mb-4">
             Sản phẩm tương tự
           </h2>
+          <ProductGrid products={similarProducts} />
         </div>
       </div>
     </div>
