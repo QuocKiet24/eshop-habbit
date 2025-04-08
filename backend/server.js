@@ -7,6 +7,7 @@ import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 import checkoutRoutes from "./routes/checkoutRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/checkout", checkoutRoutes);
+app.use("/api/orders", orderRoutes);
 
 app.listen(PORT, () => {
   connectDB();

@@ -37,11 +37,11 @@ const checkoutSchema = new mongoose.Schema(
 
     checkoutItems: [checkoutItemSchema],
     shippingAddress: {
-      address: { type: string, required: true },
-      city: { type: string, required: true },
-      district: { type: string, required: true },
-      commune: { type: string, required: true },
-      phone: { type: string, required: true },
+      address: { type: String, required: true },
+      city: { type: String, required: true },
+      district: { type: String, required: true },
+      commune: { type: String, required: true },
+      phone: { type: String, required: true },
     },
     paymentMethod: {
       type: String,
