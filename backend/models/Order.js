@@ -59,7 +59,7 @@ const orderSchema = new mongoose.Schema(
     paidAt: {
       type: Date,
     },
-    IsDelivered: {
+    isDelivered: {
       type: Boolean,
       default: false,
     },

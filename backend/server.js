@@ -10,6 +10,9 @@ import checkoutRoutes from "./routes/checkoutRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 import subscribeRoutes from "./routes/subscribeRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
+import adminProductRoutes from "./routes/adminProductRoutes.js";
+import adminOrderRoutes from "./routes/adminOrderRoutes.js";
 
 const app = express();
 
@@ -31,6 +34,9 @@ app.use("/api/checkout", checkoutRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/subsriber", subscribeRoutes);
+app.use("/api/admin/users", adminRoutes);
+app.use("/api/admin/products", adminProductRoutes);
+app.use("/api/admin/orders", adminOrderRoutes);
 
 app.listen(PORT, () => {
   connectDB();
